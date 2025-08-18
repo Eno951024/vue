@@ -11,17 +11,12 @@ import { workText } from "../constants";
             <div class="work_wrap">
                 <article class="work_item" v-for="(work, key) in workText" :key="key">
                     <span class="num">{{ key+1 }}.</span>
-                    <div class="text">
-                        <div>{{ work.text[0] }}</div>
-                        <div>{{ work.text[1] }}</div>
-                        <div>{{ work.text[2] }}</div>
+                    <div class="title">
+                        <div>{{ work.title }}</div>
                     </div>
-                    <h3 class="title">
-                        {{ work.title }}
-                    </h3>
                     <div class="btn">
-                        <a :href="work.code">code</a>
-                        <a :href="work.view">view</a>
+                        <a :href="work.code" v-if="work.code">code</a>
+                        <a :href="work.view" v-if="work.view">view</a>
                     </div>
                 </article>
             </div>
@@ -118,7 +113,7 @@ import { workText } from "../constants";
                     top: 20px;
                 }
             }
-            .text {
+            .title {
                 text-align: center;
                 margin-bottom: 1rem;
 
@@ -134,10 +129,6 @@ import { workText } from "../constants";
                         font-size: 26px;
                     }
                 }
-            }
-            .title {
-                font-family: var(--mainKor-font);
-                margin-bottom: 1rem;
             }
             .btn {
                 a {

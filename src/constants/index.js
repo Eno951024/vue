@@ -1,4 +1,9 @@
-import port01 from "../assets/img/port01.jpg";
+import otr_01 from "../assets/img/otr_01.jpeg";
+import otr_02 from "../assets/img/otr_02.jpeg";
+import otr_03 from "../assets/img/otr_03.jpeg";
+import otr_04 from "../assets/img/otr_04.jpeg";
+import otr_05 from "../assets/img/otr_05.jpeg";
+
 import { Github, Send } from 'lucide-vue-next';
 
 
@@ -46,19 +51,45 @@ export const mindsetText = [
 
 export const workText = [
     {
-        text: ["", "", ""],
-        title: "",
+        title: "VUEを利用したサイト作り",
         code: "https://github.com/Eno951024/vue",
         view: "https://port2023-vite.netlify.app",
+    },
+    {
+        title: "ゲーム紹介公式サイト製造",
+        view: "https://nogikoi.jp/",
+    },
+    {
+        title: "ゲーム紹介公式サイト製造",
+        view: "https://nogikoi.jp/",
     },
 ];
 
 export const otrText = [
     {
-        num: "01",
-        title: "",
-        desc: "",
-        img: port01,
+        title: "ライブ参加",
+        desc: "2/2.5/3次元,次元を問わず多様に楽しみます。",
+        img: otr_01,
+    },
+    {
+        title: "スポーツㅏ活動",
+        desc: "アーチェリー、キックボックシング、BJJなど色々なスポーツを楽しんでいます。",
+        img: otr_02,
+    },
+    {
+        title: "各種イベント参加",
+        desc: "コミケやTGS、超会議など様々なイベントに参加します",
+        img: otr_03,
+    },
+    {
+        title: "料理",
+        desc: "食べてみたい料理があったら直接作ります。",
+        img: otr_04,
+    },
+    {
+        title: "オタ活",
+        desc: "展示会やフェス、ポップアップなどを見に行きます。",
+        img: otr_05,
     },
 ];
 

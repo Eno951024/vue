@@ -47,7 +47,7 @@ onMounted(() => {
             </h2>
             <div class="otr_wrap">
                 <article class="otr_item" v-for="(otr, key) in otrText" :key="key">
-                    <span class="num">{{ otr.num }}.</span>
+                    <span class="num">{{ key + 1 }}.</span>
                     <div class="img">
                         <img :src="otr.img"/>
                     </div>
