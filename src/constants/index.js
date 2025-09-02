@@ -53,7 +53,7 @@ export const workText = [
     {
         title: "VUEを利用したサイト作り",
         code: "https://github.com/Eno951024/vue",
-        view: "https://port2023-vite.netlify.app",
+        view: "https://sonhyon-ho-vue.netlify.app/",
     },
     {
         title: "ゲーム紹介公式サイト製造",
