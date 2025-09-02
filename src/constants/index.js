@@ -72,7 +72,7 @@ export const otrText = [
         img: otr_01,
     },
     {
-        title: "スポーツㅏ活動",
+        title: "スポーツ活動",
         desc: "アーチェリー、キックボックシング、BJJなど色々なスポーツを楽しんでいます。",
         img: otr_02,
     },
