@@ -57,8 +57,8 @@ export const workText = [
     },
     {
         title: "Reactを利用したサイト作り",
-        code: "https://github.com/Eno951024/vue",
-        view: "https://sonhyon-ho-vue.netlify.app/",
+        code: "https://github.com/Eno951024/react-site",
+        view: "https://sonhyon-ho-react.netlify.app/",
     },
     {
         title: "ゲーム紹介公式サイト製造",
