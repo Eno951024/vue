@@ -105,7 +105,7 @@ onMounted(() => {
             }
 
             @media (max-width: 430px) {
-                height: 40vh;
+                height: 50vh;
             }
 
             &:nth-child(1) { background-color: var(--subBg100); }
