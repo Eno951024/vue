@@ -51,13 +51,14 @@ export const mindsetText = [
 
 export const workText = [
     {
-        title: "VUEを利用したサイト作り",
+        title: "Vueを利用したサイト作り",
         code: "https://github.com/Eno951024/vue",
         view: "https://sonhyon-ho-vue.netlify.app/",
     },
     {
-        title: "ゲーム紹介公式サイト製造",
-        view: "https://nogikoi.jp/",
+        title: "Reactを利用したサイト作り",
+        code: "https://github.com/Eno951024/vue",
+        view: "https://sonhyon-ho-vue.netlify.app/",
     },
     {
         title: "ゲーム紹介公式サイト製造",
