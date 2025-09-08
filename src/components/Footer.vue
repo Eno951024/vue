@@ -68,6 +68,10 @@ import { socialLinks } from "../constants";
     }
 
     @media (max-width: 800px) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
         
         .footer_info {
             margin-bottom: 1rem;

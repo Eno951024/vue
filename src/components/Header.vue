@@ -88,71 +88,67 @@ export default {
     }
     
     .header_nav {
-        @media (max-width: 800px){
-            display: none;
+    li {
+      display: inline-block;
 
-            &.show {
-                display: block;
+      a {
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 14px;
+        position: relative;
+        color: var(--white);
 
-                ul {
-                    display: block;
-                    position: absolute;
-                    right: 0;
-                    top: 68px;
-                    background-color: rgba(116,99,99,0.1);
-                    backdrop-filter: blur(15px);
-                    z-index: 10000;
-                    min-width: 150px;
-                    padding: 20px 0;
-
-                    li {
-                        display: block;
-                        text-align: right;
-
-                        a {
-                            display: inline-block;
-                            padding: 10px;
-                            font-weight: bold;
-                            font-size: 20px;
-                            color: white;
-                        }
-                    }
-                }
-            }
-            &.show + .header_nav_mobile span::before {
-                width: 20px;
-            }
-            &.show + .header_nav_mobile span::after {
-                width: 20px;
-            }
+        &::before {
+          content: '';
+          width: calc(100% - 28px);
+          height: 1px;
+          background-color: var(--white);
+          position: absolute;
+          left: 14px;
+          bottom: 10px;
+          transform: scaleX(0);
+          transition: transform 0.3s;
         }
-        
-        li {
-            display: inline;
-    
-            a {
-                text-transform: uppercase;
-                font-size: 14px;
-                padding: 14px;
-                position: relative;
-    
-                &::before {
-                    content: '';
-                    width: calc(100% - 28px);
-                    height: 1px;
-                    background-color: var(--white);
-                    position: absolute;
-                    left: 14px;
-                    bottom: 10px;
-                    transform: scaleX(0);
-                    transition: all 0.3s;
-                }
-                &:hover::before {
-                    transform: scaleX(1);
-                }
-            }
+
+        &:hover::before {
+          transform: scaleX(1);
         }
+      }
     }
+
+    @media (max-width: 800px) {
+      display: none;
+
+      &.show {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 68px;
+        background-color: rgba(116, 99, 99, 0.1);
+        backdrop-filter: blur(15px);
+        z-index: 10000;
+        min-width: 150px;
+        padding: 20px 0;
+
+        ul {
+          display: block;
+
+          li {
+            display: block;
+            text-align: right;
+
+            a {
+              display: inline-block;
+              padding: 10px 20px;
+              font-weight: bold;
+              font-size: 18px;
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+  }
     
     .header_nav_mobile {
         display: none;
@@ -172,26 +168,26 @@ export default {
             margin-top: 19px;
             position: relative;
 
-            &::before {
-                content: "";
-                width: 40px;
-                height: 2px;
-                background-color: var(--black);
-                position: absolute;
-                right: 0;
-                top: 6px;
-                transition: width 0.3s;
-            }
+            &::before,
             &::after {
                 content: "";
                 width: 40px;
                 height: 2px;
                 background-color: var(--black);
                 position: absolute;
-                left: 0;
-                bottom: 6px;
                 transition: width 0.3s;
             }
+
+            &::before { top: -6px; right: 0; }
+            &::after { bottom: -6px; left: 0; }
+        }
+        
+        &.active span::before {
+        width: 20px;
+        }
+
+        &.active span::after {
+        width: 20px;
         }
     }
 } 
