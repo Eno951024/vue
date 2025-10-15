@@ -3,6 +3,7 @@ import otr_02 from "../assets/img/otr_02.jpeg";
 import otr_03 from "../assets/img/otr_03.jpeg";
 import otr_04 from "../assets/img/otr_04.jpeg";
 import otr_05 from "../assets/img/otr_05.jpeg";
+import otr_06 from "../assets/img/otr_06.jpeg";
 
 import { Github, Send } from 'lucide-vue-next';
 
@@ -64,6 +65,10 @@ export const workText = [
         title: "ゲーム紹介公式サイト製造",
         view: "https://nogikoi.jp/",
     },
+    {
+        title: "ゲームコントローラ作り",
+        view: "https://github.com/Eno951024/Game_Controller/tree/main",
+    },
 ];
 
 export const otrText = [
@@ -91,6 +96,11 @@ export const otrText = [
         title: "オタ活",
         desc: "展示会やフェス、ポップアップなどを見に行きます。",
         img: otr_05,
+    },
+    {
+        title: "制作",
+        desc: "機械やゴッズ、酒などを作ったししています。",
+        img: otr_06,
     },
 ];
 
