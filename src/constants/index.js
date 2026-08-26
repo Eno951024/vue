@@ -69,6 +69,11 @@ export const workText = [
         title: "ゲームコントローラ作り",
         view: "https://github.com/Eno951024/Game_Controller/tree/main",
     },
+    {
+        title: "写真アーカイブサイト作り",
+        code: "https://github.com/Eno951024/photo-archive",
+        view: "https://photoarchive.netlify.app/",
+    },
 ];
 
 export const otrText = [
