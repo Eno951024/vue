@@ -71,6 +71,7 @@ import { workText } from "../constants";
       &:nth-child(2) { background-color: var(--subBg200); top: 200px; }
       &:nth-child(3) { background-color: var(--subBg300); top: 220px; }
       &:nth-child(4) { background-color: var(--subBg400); top: 240px; }
+      &:nth-child(4) { background-color: var(--subBg500); top: 260px; }
 
       .num {
         font-size: 5vw;
